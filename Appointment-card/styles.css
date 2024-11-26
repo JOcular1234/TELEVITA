@@ -1,0 +1,212 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 12pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: var(--text-color);
+}
+:root{
+    --color-1:#0f1016;
+    --text-color:#f0f0f0;
+    --accent-color:#006aff;
+    --back-color:#DBEAFF;
+    --btn-color:#007bff;
+}
+nav{
+    height: 30px;
+    background-color: var(--back-color);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.links-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav a{
+    height: 100%;
+    padding: 0 20px;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-1);            
+}
+nav a:hover{
+    background-color: var(--accent-color);
+}
+nav .home-link{
+        margin-right: auto;
+    }
+    nav svg{
+        fill: var(--color-1);
+    }
+    #sidebar-active{
+        display: none;
+    }
+    .open-sidebar-botton, .close-sidebar-botton{
+        display: none;
+    }
+    .signUp{
+        color: #000;
+        border-radius: 40px;
+        background-color: #F5F5F5;
+    }
+    .signUp:hover{
+        color: #fff;
+        background-color: blue;
+    }
+    .signin{
+        color: #fff;
+        border-radius: 40px;
+        background-color: #007bff;
+    }
+    .signin:hover{
+        color: #fff;
+        background-color: blue;
+    }
+    @media (max-width:450px) {
+        .links-container{
+            flex-direction: column;
+            align-items: flex-start;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            z-index: 10;
+            width: 300px;
+            background-color: var(--back-color);
+            box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+            transition: 0.75s ease-out;
+        }
+    
+        nav a{
+            box-sizing: border-box;
+            height: auto;
+            width: 100%;
+            padding: 20px 30px;
+            justify-content: flex-start;
+        }
+        .open-sidebar-botton, .close-sidebar-botton{
+        padding: 20px;
+        display: block;
+    }
+    #sidebar-active:checked ~ .links-container{
+        right: 0;
+    }
+    #sidebar-active:checked ~ #overlay{
+        background-color: rgb(234, 221, 204);
+       height: 100%;
+       width: 100%;
+       position: fixed;
+       top: 0;
+       left: 0;
+       z-index: 9;
+    }
+    }
+
+    .main-container{
+        height: 370px;
+        width: 63%;
+        margin: 5% auto;
+        border-radius: 20px;
+        background-color: #fff;
+    }
+    .secnd-container{
+        height: 280px;
+        width: 90%;  
+        margin: 0 auto;
+        display: flex;
+        gap: 60px; 
+    }
+    .img-container{
+        background-color: #24306E;
+        height: 173px;
+        width: 250px;
+        border-radius: 20px;
+    }
+    .imgs{
+       margin-left: 50px;
+       margin-top: -26px;
+    }
+    .Raiting{
+        display: flex;
+    }
+    .btn1{
+        background-color: #EDEDED;
+        border: none;
+        border-radius: 40px;
+        padding: 5px;
+        width: 45%;
+        margin-bottom: 10px;
+    }
+    .appointable-container{
+        width: 450px;
+    }
+    .input-container{
+        display: flex;
+        justify-content:start;
+        gap: 70px;
+    }
+    .email-div{
+        text-align: center;
+        margin-top: 20px;
+
+    }
+    .email{
+        width: 98%;
+        margin-left: -1px;
+        border-radius:6px;
+        padding: 5px;
+        outline: none;
+        border: 1px solid;
+        border-color: darkgrey;
+        background-color: #f2ecec;
+    }
+    .date-container{
+        display: flex;
+        justify-content: start;
+        gap: 110px;
+        margin-top: 20px;
+    }
+    input::placeholder{
+        font-size: 12px;
+    }
+    .fname{
+        border-radius:6px;
+        padding: 5px;
+        outline: none;
+        border: 1px solid;
+        border-color: darkgrey;
+        background-color: #f2ecec;
+    }
+    .payment-container{
+        margin-top: 20px;
+        font-size: 15px;   
+    }
+    .btn2{
+        text-align: center;
+        padding: 5px;
+        width: 40%;
+        border-radius: 10px;
+        border: none;
+        font-size: 17px;
+        background-color: #24306E;
+        margin-left: 100px;
+        margin-top: 20px;
+        cursor: pointer;
+        color: #fff;
+    }
+    .btn2:hover{
+        background-color: #007bff;
+    }
+    @media (max-width:450px){
+        .secnd-container{
+            flex-direction: column;
+        }
+    }

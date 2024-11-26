@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/doctor-dashbord/styles.css">
+
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-botton">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </label>
+        <label id="overlay" for="sidebar-active"></label>
+        <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-botton">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </label>
+
+            <a href="#" class="home-link" >TELEVITA</a>
+
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>   
+        </div>
+        
+    </nav>
+    <div class="first-container">
+        <div class="side-container">
+            <p class="txt1"><a href="#">Dashboard</a></p>
+            <p class="text1"><a href="#">Profile</a></p>
+            <p class="text1"><a href="/doctors-form/index.html">complete Reg.</a></p>
+            <p class="text1"><a href="#">Messages</a></p>
+            <p class="text1"><a href="#">Calender</a></p>
+            <p class="text1"><a href="#">Notification</a></p>
+            <p class="text1"><a href="#">Settings</a></p>
+            <p class="text1"><a href="#">Log out</a></p>
+        </div>
+
+        <div >
+            <select name="" id="" class="side-container3">
+                <option value="">Dashboard</option>
+                <option value="">Profle</option>
+                <option value="">Appointment</option>
+                <option value="">Messages</option>
+                <option value="">Calender</option>
+                <option value="">Notification</option>
+                <option value="">Settings</option>
+                <option value="">Log out</option>
+            </select>
+        </div>
+
+
+      <div class="side-container2">
+        <p class="text2">Welcome Dr. Williams</p>  
+        <div class="search_container">
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+            <div class="input_box">
+                <input type="search" placeholder="Search..." class="input_button">
+            </div>
+        <div>
+            <button class="search-button">Search</button>
+        </div>
+    </div>
+      <p class="appt-txt">Appointment</p>
+      <div id="appointment-display">
+
+        <p class="text3">No Appontment yet</p>
+      </div>
+      </div>
+    </div>
+    <p style="text-align: center; margin-top: 90px; margin-left: -170px;">copyright &copy; 2024 Televiva</p>
+</body>
+</html>

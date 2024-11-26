@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="/doctors-form/styles.css">
+    
+</head>
+<body>
+
+    <nav>
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-botton">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </label>
+        <label id="overlay" for="sidebar-active"></label>
+        <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-botton">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </label>
+
+            <a href="#" class="home-link" >TELEVITA</a>
+
+            <a href="/patient-dashbord/index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+           
+        </div>
+        
+    </nav>
+
+    <div class="main-container">
+   <form id="application">
+    <div class="name-container">
+        <div>
+        <label for="">Title</label><span style="color: red !important; display: inline; float: none;">*</span>  
+        <p><input type="text" size="5" required></p>
+        </div>
+        <div>
+        <label for="" >First Name:</label><span style="color: red !important; display: inline; float: none;">*</span>  
+        <p><input type="text" required id="fname"></p>
+    </div>
+    <div>
+        <label for="">Last Name:</label><span style="color: red !important; display: inline; float: none;">*</span>  
+        <p><input type="text" required></p>
+        </div>
+    </div>
+    <div class="mail">
+        <label for="">Email Adress:</label> <span style="color: red !important; display: inline; float: none;">*</span>  
+        <p><input type="text" class="email" placeholder="jondoe@gmail.com" required></p>
+        </div>
+        <div class="phone-number">
+        <div>
+            <label for="">Phone Number:</label><span style="color: red !important; display: inline; float: none;">*</span>  </p>
+            <p><input type="tel" placeholder="07012345678" required></p>
+        </div>
+        <div>
+            <label for=""> NIN:</label><span style="color: red !important; display: inline; float: none;">*</span>  
+            <p><input type="text" placeholder="36123456789" required></p>
+        </div>
+        </div>
+        <div class="country">
+        <label for="country">Country</label>
+        <span style="color: red !important; display: inline; float: none;">*</span>      
+        <select name="" id="" class="contry-input">
+            <option value="" >Nigeria</option>
+        </select>
+       <p> <label for="">State</label><span style="color: red !important; display: inline; float: none;">*</span>  
+            <select name="" id="" class="state-input">
+                <Option>Abia</Option>
+                <option value="">Adamawa</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select></p> 
+        </div>
+            <div class="qualifications">
+                <div>
+            <label for="">Specify your Qualifications:</label><span style="color: red !important; display: inline; float: none;">*</span>  
+            <p><textarea name="" id="" class="text1"></textarea></p>
+            </div>
+            <div>
+            <label for="">Place of Work:</label><span style="color: red !important; display: inline; float: none;">*</span>  
+            <p><textarea name="" id=""  class="text2" required></textarea></p></p>
+            </div>
+        </div>
+        <div class="doc">
+            <label for="">Upload your Resume:</label><span style="color: red !important; display: inline; float: none;">*</span>  
+            <p><input type="file" accept=".pdf" multiple></p required>
+            <div>
+                <button class="btn2" type="submit">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+
+   </form>
+</div>
+<p style="text-align: center;">copyright &copy; 2024 Televiva</p>
+<script src="/doctors-form/script.js"></script>
+</body>
+</html>
