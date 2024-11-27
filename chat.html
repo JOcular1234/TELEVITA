@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+    <div id="chat-container">
+        <div id="chat-box">
+          <div id="messagesC">
+
+          </div>
+        </div>
+        <div id="chat-input">
+          <input type="text" id="message-inputC" placeholder="Type your message here...">
+          <button id="send-buttonC"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="34px" color="white" fill="#5f6368"><path d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z"/></svg></button>
+        </div>
+      </div>
+      <div id="messagesC">
+
+      </div> 
+
+      <script src="/socket.io/socket.io.js"></script>
+      <script>
+        // Connect to the Socket.IO server
+const socket = io();
+      
+      // Select elements from the DOM
+      const sendButton = document.getElementById('send-button');
+      const messageInput = document.getElementById('message-input');
+      const messagesDiv = document.getElementById('messages');
+      
+      const currentUser = "Mfon"; // Example: Replace with actual user ID or name
+      // Send a message when the send button is clicked
+      
+      sendButton.addEventListener('click', () => {
+        const message = messageInput.value.trim(); // Get and sanitize user input
+        if (message) {
+          socket.emit('chat message',{ sender: currentUser, text: message }); // Emit the message to the server
+          messageInput.value = ''; // Clear the input field
+        }
+      });
+      
+      // Listen for incoming messages from the server
+      socket.on('chat message', (msg) => {
+        const messageElement = document.createElement('div'); // Create a message element
+        messageElement.classList.add('message');
+        if (msg.sender === currentUser) {
+          messageElement.classList.add('sender');
+        } else {
+          messageElement.classList.add('receiver');
+        }
+      
+        messageElement.textContent = msg.text; // Set the text content to the received message
+        messagesDiv.appendChild(messageElement); // Add the message to the chat box
+      
+        // Optional: Scroll to the newest message
+        messagesDiv.scrollTop = messagesDiv.scrollHeight;
+      });
+      </script>
+</body>
+</html>

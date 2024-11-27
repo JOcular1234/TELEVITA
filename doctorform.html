@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form</title>
-    <link rel="stylesheet" href="/doctors-form/styles.css">
-    
+    <link rel="stylesheet" href="styles.css">    
 </head>
 <body>
 
@@ -31,7 +30,7 @@
         
     </nav>
 
-    <div class="main-container">
+    <div class="main-containerF">
    <form id="application">
     <div class="name-container">
         <div>
@@ -47,9 +46,9 @@
         <p><input type="text" required></p>
         </div>
     </div>
-    <div class="mail">
+    <div class="mailF">
         <label for="">Email Adress:</label> <span style="color: red !important; display: inline; float: none;">*</span>  
-        <p><input type="text" class="email" placeholder="jondoe@gmail.com" required></p>
+        <p><input type="text" class="emailF" placeholder="jondoe@gmail.com" required></p>
         </div>
         <div class="phone-number">
         <div>
@@ -67,76 +66,64 @@
         <select name="" id="" class="contry-input">
             <option value="" >Nigeria</option>
         </select>
-       <p> <label for="">State</label><span style="color: red !important; display: inline; float: none;">*</span>  
-            <select name="" id="" class="state-input">
-                <Option>Abia</Option>
-                <option value="">Adamawa</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-            </select></p> 
+       <p> <label for="">State</label><span style="color: red !important; display: inline; float: none;">*</span>   <P>
+        <select name="states" id="states">
+            <option value="">Select a State</option>
+            <option value="abia">Abia</option>
+            <option value="adamawa">Adamawa</option>
+            <option value="akwa-ibom">Akwa Ibom</option>
+            <option value="anambra">Anambra</option>
+            <option value="bauchi">Bauchi</option>
+            <option value="bayelsa">Bayelsa</option>
+            <option value="benue">Benue</option>
+            <option value="borno">Borno</option>
+            <option value="cross-river">Cross River</option>
+            <option value="delta">Delta</option>
+            <option value="ebonyi">Ebonyi</option>
+            <option value="edo">Edo</option>
+            <option value="ekiti">Ekiti</option>
+            <option value="enugu">Enugu</option>
+            <option value="gombe">Gombe</option>
+            <option value="imo">Imo</option>
+            <option value="jigawa">Jigawa</option>
+            <option value="kaduna">Kaduna</option>
+            <option value="kano">Kano</option>
+            <option value="katsina">Katsina</option>
+            <option value="kebbi">Kebbi</option>
+            <option value="kogi">Kogi</option>
+            <option value="kwara">Kwara</option>
+            <option value="lagos">Lagos</option>
+            <option value="nasarawa">Nasarawa</option>
+            <option value="niger">Niger</option>
+            <option value="ogun">Ogun</option>
+            <option value="ondo">Ondo</option>
+            <option value="osun">Osun</option>
+            <option value="oyo">Oyo</option>
+            <option value="plateau">Plateau</option>
+            <option value="rivers">Rivers</option>
+            <option value="sokoto">Sokoto</option>
+            <option value="taraba">Taraba</option>
+            <option value="yobe">Yobe</option>
+            <option value="zamfara">Zamfara</option>
+            <option value="fct">Federal Capital Territory (FCT)</option>
+        </select>
+</P>         
         </div>
             <div class="qualifications">
                 <div>
             <label for="">Specify your Qualifications:</label><span style="color: red !important; display: inline; float: none;">*</span>  
-            <p><textarea name="" id="" class="text1"></textarea></p>
+            <p><textarea name="" id="" class="text1F"></textarea></p>
             </div>
             <div>
             <label for="">Place of Work:</label><span style="color: red !important; display: inline; float: none;">*</span>  
-            <p><textarea name="" id=""  class="text2" required></textarea></p></p>
+            <p><textarea name="" id=""  class="text2F" required></textarea></p></p>
             </div>
         </div>
-        <div class="doc">
+        <div class="do">
             <label for="">Upload your Resume:</label><span style="color: red !important; display: inline; float: none;">*</span>  
             <p><input type="file" accept=".pdf" multiple></p required>
             <div>
-                <button class="btn2" type="submit">SUBMIT</button>
+                <button class="btn2F" type="submit">SUBMIT</button>
             </div>
         </div>
     </div>
@@ -144,6 +131,18 @@
    </form>
 </div>
 <p style="text-align: center;">copyright &copy; 2024 Televiva</p>
-<script src="/doctors-form/script.js"></script>
+<script>
+    
+document.getElementById('application').addEventListener('submit', function(event){
+    event.preventDefault();
+    let docApplication = document.getElementById('fname').value;
+let ThankYouMessage = `Thank you,  ${docApplication}  Thank you for your Application, We will review and send you feedback.
+ `
+ window.location.href = 'thankyou.html';
+ alert(ThankYouMessage)
+    
+});
+
+</script>
 </body>
 </html>
