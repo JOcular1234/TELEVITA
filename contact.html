@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact</title>
+    <style>
+        form{
+            width: 50%;
+            border: 1px solid;
+            padding: 20px;
+            text-align: center;
+            margin: 0 auto;
+            /* box-shadow: 0 0 3px 1px ; */
+            border: none;
+        }
+        input{
+            background: transparent;
+            outline: none;
+            width: 100%;
+            border: 1px solid;
+            height: 30px;
+            color: gray;
+            padding: 0 5px;
+            margin: 10px 0;
+        }
+        textarea{
+            background: transparent;
+            resize: none;
+            outline: none;
+            height: 100px;
+            width: 100%;
+            color: gray;
+            padding: 0 5px;
+        }
+        button{
+            padding: 10px;
+            width: 80px;
+            border: none;
+            border-radius: 10px;
+            margin: 10px 0;
+            color: #fff;
+            background-color: blue;
+        }
+        button:hover{
+            background-color: transparent;
+            color: blue;
+            border:1px solid blue;
+            transition: all .5s;
+        }
+        .contact-header{
+            font-size: 25px;
+            font-weight: 700;
+            color: blue;
+        }
+        .form-container{
+            display: flex;
+            justify-content: space-around;
+            padding: 30px;
+        }
+        .address{
+            font-size: 20px;
+            color: hsl(0, 0%, 30%);
+            margin: 15px 0;
+        }
+        .address-res{
+            font-size: 15px;
+            color: gray;
+        }
+        i{
+            font-size: 30px;
+            color: blue;
+        }
+        .first-child{
+            padding: 20px 0;
+        }
+        .Contact-us{
+            text-align: center;
+            font-size: 30px;
+            font-weight: 600;
+            color: hsl(0, 0%, 30%);
+        }
+        .contact-uspage{
+            text-align: center;
+            padding: 20px 0;
+            color: hsl(0, 0%, 30%);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-botton">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </label>
+        <label id="overlay" for="sidebar-active"></label>
+        <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-botton">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </label>
+
+            <img src="/images/Group 9184.png" alt="" width="50px" class="home-link"> 
+            <a href="/index.html">Home</a>
+            <a href="/aboutus.html">About</a>
+            <a href="/services.html">Services</a>
+            <a href="/contact.html">Contact</a>
+           
+        </div>
+        
+    </nav>
+    <div>
+        <p class="Contact-us">CONTACT US</p>
+        <p class="contact-uspage">Want to say hi or report an issue or partnership with us? Leave a message</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.5596471702097!2d5.220180953438649!3d7.599233117857508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1047fab43543728f%3A0x384e7378dfb5359e!2sAdebayo%20Street%2C%20Ado%20Ekiti%20360101%2C%20Ekiti!5e1!3m2!1sen!2sng!4v1732799438524!5m2!1sen!2sng" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+<div class="form-container">
+    <div class="first-child">
+        <p class="address"><i class="fa-solid fa-location-dot"></i> Office Adress:</p>
+        <p class="address-res">NiceGuy Complex, 20 Adebayo Road, Ado Ekiti</p>
+        <p class="address"><i class="fa-solid fa-envelope"></i> Email Adress:</p>
+        <p ><a href="mailto:mfonobongumoh75@gmail.com" class="address-res"> televivainfo@gmail.com</a></p>
+        <p class="address"><i class="fa-solid fa-phone"></i>Phone Number:</p>
+        <p class="address-res">07019222397</p>
+
+    </div>
+    <form action="">
+        <p class="contact-header">Contact Us</p>
+        <p class="contact-name"><label for="fname"></label> <input type="text" id="fname" placeholder="Name"></p> 
+        <p class="contact-email"><label for="email"></label> <input type="email" placeholder="Email Adress"></p>
+        <p class="contact-message"><label for="message"></label> <textarea name="message" placeholder="Enter your message here..." id="message"></textarea></p>
+        <button>Submit</button>
+    </form>
+</div>
+</body>
+</html>
